@@ -1,0 +1,69 @@
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+    /* Box-shadow legger til kul skygge på  */
+}
+
+/* Dette er koden til "displayet" på kalkulatoren */
+
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background-color: aliceblue;
+}
+
+/* Dette er resten av knappene */
+
+.buttons{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.buttons > div{
+    border-top: 1px solid #999;
+    border-right: #999;
+}
+
+.button{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: center;
+    cursor: pointer;
+}
+
+/* = knappen får en annen farge og er kul */
+
+#equal{
+    background-color: rgb(119, 119, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* Hvis du holder musen på knappen så blir den grå, og pga transition har den sånn kul fade. */
+
+.button:hover{
+    background-color: grey;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/* Knapp for å gå tilbake til apps :) */
+
+.goBackButton{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 4px double #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/meny.css">
+    <link rel="stylesheet" href="/css/style.css"> <!-- Sammenkobler CSS med HTML.  -->
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/6a610a356a.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script> <!-- Sammenkobler javascript med HTML. -->
+</head>
+<body>
+    <button id="top">TOP<i class="fa-solid fa-caret-up"></i></button> <!--Knapp som  drar deg tilbake til toppen av nettsiden igjen-->
+<header>
+    <div class="topnav">
+        <a href="/" style="padding: 4px; height: 40px;"> <!-- Height for å endre størrelse og padding for å gi den padding på 4px vett ikkje kæ dæ æ på norsk.-->
+        <img id="logo" src="/bilder/Liten_logo_2.jpeg" height="40px" width="40px"></a>
+        <a class="active" href="#home">Home</a> <!-- Denne er aktiv så den får classen active slik vet lesaren hvilken side hen er på. -->
+        <a href="/html/blog.html">Blog</a>
+        <a href="/html/contact.html">Om meg</a>
+        <a href="/html/apps.html">Apps</a>
+    </div>
+</header>
+    <section>
+        <div class="element"> <!-- La til class "element" så sjekk ut den i css den står i style.css -->
+            <br> <br> <br> <br> <br> <br> <br> <!-- Lagt til <br> for å skippe linjer som også drar ut bilde meningen er at den skal passe til skjermen, men er litt vanskelig på den store imac skjermen -->
+            <div class="text"> <!-- bruker class tekst som gir den de samme egenskapene som er satt i css filen -->
+                <h1 style="text-align: center;">HOME</h1> <!-- Her har jeg brukt style for å vise at jeg kan gjøre det også er det ganske lettvinnt å gjøre det også -->
+                <div class="ting">
+                    <h3>Velkommen til min side</h3> <!-- Vi bruker for det meste bare h1-h7 -->
+                </div>
+            </div>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <!-- Flere mellomrom <br> viser at du vil gå til neste linje på "dokumenter" en nettside er egentlig bare ett tekst dokument.-->
+        </div> <!-- Jeg bruker også div for å dele inn forskjellige ting. -->
+    </section>        
+    <section> <!-- <section> er også en annen måte å vise at dette er en annen seksjon -->
+        <div class="element2">
+            <br>
+            <h2>På denne nettsiden vil eg vise deg kva eg kan gjere og kva eg har lært dei siste vekene. <br> <br> Hvilke språk har eg brukt? <br></h2>
+            <h3><li>HTML</li> <br> <li>Javascript</li> <br> <li>CSS</li></h3> <!-- <li>noe</li> gir den en sånn prikk og lager en slags liste som er ganske kult. -->
+            <h5>Gå innom "om meg" får å se skill levelen min på de forskjellige språkene</h5>
+            <br>
+        </div>
+    </section> <!-- Kul footer stylet med style istede for å bruke en egen class eller id fordi det er lettvint.-->
+    <footer style="color: white; text-align: center; background-color: rgb(21, 21, 21);">Joakim Johnsen <br> tlf: <a style="color: gray ;" href="tel:47603382">47603382</a> <br> mail:<br> <a style="color: gray;" href="mailto:joajohnsen@elev.rogfk.no"> joajohnsen@elev.rogfk.no</a></footer>
+</body>
+</html>

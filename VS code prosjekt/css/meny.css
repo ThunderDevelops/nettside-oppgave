@@ -1,0 +1,88 @@
+/* Denne var egentlig bare brukt til å lage designet på en meny, men bruker den til litt andre ting også */
+
+/* Felles for adle sie med menyen */ 
+body{
+    margin: 0;
+    background: fixed;
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+}
+
+/* Selve menyen */
+
+.topnav {
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.topnav a {
+    height: 20px;
+    float: left;
+    display: block;
+    color: #0d0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+/* Når du har musetasten over ett element på menyen så skjer dette*/
+.topnav a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Den som har classen active får da denne */
+.topnav a.active {
+    box-shadow: 0 4px 0 #000 inset;
+}
+
+/* slutten på memyen og begynnelsen på adle dei andre tingå */
+
+
+.main{
+    margin-top: 30px;
+}
+
+/* Denne blir brukt i index.html */
+.text{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+/* Dette er koden til den knappen som gjære at du kommer tilbake til top i home siden */
+
+#top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 100;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+/* Når du har musetasten over den knappen som drar deg tilbake til toppen på home siden blir den lysegrå */
+#top:hover{
+    background: lightgray;
+}
+
+/* Seie sæg sjøl dæ æ footeren */
+footer{
+    width: 100%;
+    background: #333;
+}

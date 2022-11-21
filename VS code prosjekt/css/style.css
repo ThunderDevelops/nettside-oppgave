@@ -1,0 +1,31 @@
+/* importerer en ny font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap%27');
+
+/* "*" gjør egentlig det samme som "html" eller "body" gjør det er bare en annen måte å gjøre det på. */
+*{
+    font-family: 'Roboto'; /* Bytter font */
+}
+
+/* "body" gjør at jeg kan endre på hele bodyen. Det vil si selve tekst dokumentet.*/
+body{
+    background: fixed;
+    background-color: aliceblue; /* Endrer bakgrunnsfarge */
+    margin: 0; /* Setter margin til null. */
+    scroll-behavior: smooth; /* Gir en smooth opplevelse når du scroller ;) haha */
+}
+
+/* Dette er det store bilde på hjem siden */
+.element{
+    background-image: url("/bilder/stock_image_city.webp"); /* legger til bakgrunnsbilde */
+    background-repeat: no-repeat; /* Bakgrunnen skal ikkje repeteres */
+    background-size: 100% 100%; /* Velger størrelse på backgrunnen */
+    color: #fff; /* Endrer farge og ihvertfall i dette tilfellet på teksten */
+    font-size: 32px; /* Endrer størrelse på teksten */
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.4); /* Legger til skygge på elementet. */
+}
+
+.element2{ /* Dette er koden til den andre seksjonen der eg skriver litt om nettsiden */
+    background-color: white; /* Endrer bakgrunnsfarge */
+    color: black; /* Endrer farge på teksten */
+    padding-left: 20px; /* Padding-left gjør at den bare får padding på venstre side. På denne måten dytter jeg teksten 20px lenger vekk fra kanten for at det skal se bedre ut.*/
+}

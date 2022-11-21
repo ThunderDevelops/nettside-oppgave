@@ -1,0 +1,146 @@
+/* Hele dokumentet */
+html,body{
+    place-items: center;
+    background-color: rgb(21, 21, 21);
+}
+
+/* h1 i css sånn som dette gjør at all h1 bruker denne cssen. */
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 5px 5px black;
+    margin-top: 50px;
+}
+
+/* p */
+
+p{
+    text-align: center;
+    color: white;
+}
+
+/* Dette er "kortet" eller kontaineren skull baren er på */
+.skill-bars{
+    padding: 30px 30px;
+    width: 900px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+/* Dette er selve baren */
+.bar{ 
+    margin: 20px 0;
+    padding: 8px 0;
+}
+.bar:first-child{
+    margin-top: 0px;
+}
+/* Denne er til teksten som, HTML, CSS aka overskriftene til baren. */
+.info{ 
+    margin-bottom: 5px;
+}
+.info span{
+    font-weight: 500;
+    font-size: 17px; opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+} 
+
+/* Animasjon: Viser tekst på skill baren min */
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Dette er selve linjen på progress line greia */
+.progress-line{
+    height: 10px; width: 100%;
+    background: #f0f0f0; position: relative;
+    transform: scaleX(0); transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+                0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+
+/* Her kan du endre farge på linjen med background. */
+.progress-line span{
+    height: 100%; position: absolute;
+    border-radius: 10px;
+    transition: scaleX(0);
+    transform-origin: left;
+    background: rgb(119, 0, 255); /* Denne */
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+/* Før bare span */
+.progress-line span::before{
+    position: absolute; content: "";
+    top: -10px; right: 0;
+    height: 0; width: 0; opacity: 0;
+    border-bottom-width: 0px;
+    border-top-color: #000;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+/* Etterpå */
+.progress-line span::after{
+    position: absolute; top: -28px;
+    right: 0; font-weight: 500;
+    background: #000;
+    color: #fff; opacity: 0;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+/* Denne animerer selve linjene */
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+/* Disse nedenfor definerer hvor mange prosent */
+.html span{
+    width: 70%;
+}
+.css span{
+    width: 60%;
+}
+.JavaScript span{
+    width: 50%;
+}
+.react span{
+    width: 0%;
+}
+
+/* Denne viser prosent teksten */
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.html span::after{
+    content: "70%";
+}
+.css span::after{
+    content: "60%";
+}
+.JavaScript span::after{
+    content: "50%";
+}
+.react span::after{
+    content: "0%";
+}
+
+/* Hær bruge æg id med #. Her bruker eg display og place items for å centrere skill baren. */
+#konteiner{
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Her importerer vi stylesheet/ sammenkobler css med html -->
+    <link rel="stylesheet" href="/css/meny.css">
+    <link rel="stylesheet" href="/css/responsive.css"> <!-- Koden til nesten hele denne siden er på responsive.css -->
+    <title>apps</title>
+</head>
+<body style="background-color: rgb(21, 21, 21);"> <!-- Her finner du navigasjonsbaren -->
+    <div class="topnav">
+        <a href="/" style="padding: 4px; height: 40px;">
+            <img id="logo" src="/bilder/Liten_logo_2.jpeg" height="40px" width="40px"></a>
+        <a href="/html/index.html">Home</a>
+        <a href="/html/blog.html">Blog</a>
+        <a href="/html/contact.html">Om meg</a>
+        <a class="active" href="/html/apps.html">Apps</a>
+    </div>
+
+    <div class="container"> <!-- Kontainer som inneholder kortene -->
+        <div class="card"> <!-- kortet står mer i css om disse som kommer under -->
+            <div class="face face1"> <!-- Første kortet. -->
+                <div class="content"> <!-- inni content er alt som vises på kortet som du ser nedenfor -->
+                    <i class="fab fa windows">Kalkulator</i> <!-- <i> blir brukt for å gi teksten/innholdet en kul font -->
+                    <h3 style="font-size: 32px;">Denne er kul!</h3> <!-- h3 er egentlig en slags overskrift, men her blir det egentlig brukt for å gjøre teksten større -->
+                </div>
+            </div>
+            <div class="face face2"> 
+                <div class="content">
+                    <br> <br> <!-- <br> hopper ned en linje. -->
+                    <button class="knappen" onclick="window.location.href = '/apper/kalkulator/kalkulator.html';">Trykk her</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

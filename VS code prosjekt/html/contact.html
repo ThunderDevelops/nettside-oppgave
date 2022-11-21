@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Definerer hvilket språk -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sammenkobler css med html -->
+    <link rel="stylesheet" href="/css/meny.css"> <!-- Denne er til menyen og andre felles ting -->
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact</title>
+</head>
+<body style="background-color: rgb(21, 21, 21);"> <!-- navigasjonsbar -->
+    <div class="topnav">
+        <a href="/" style="padding: 4px; height: 40px;"> <!-- Her he æg brukt style for å legge til css. -->
+            <img id="logo" src="/bilder/Liten_logo_2.jpeg" height="40px" width="40px"></a> <!-- Bilde på nav baren -->
+        <a href="/html/index.html">Home</a>
+        <a href="/html/blog.html">Blog</a>
+        <a class="active" href="/html/contact.html">Om meg</a> <!-- Denne er aktiv så den får classen active -->
+        <a href="/html/apps.html">Apps</a>
+    </div>
+
+    <section> <!-- Stylen er delt opp i h1 og p i css. Dette gjør også at alt i dokumentet som er enten p eller h1 får samme style. -->
+        <h1>Joakim Johnsen</h1> <br>
+        <p>Hei, eg er 15 år, og går på gand vgs.</p> 
+    </section>
+
+    <section id="konteiner"> <!-- Her har jeg laget en kul skill bar som viser hva jeg kan av kodespråk -->
+        <h1>Mine skills</h1>
+        <div class="skill-bars">
+            <div class="bar">
+                <div class="info"> <span>HTML</span></div> <!-- Denne viser at det er HTML -->
+                <div class="progress-line html"> <span></span></div> <!-- Dette er selve linjen -->
+            </div>
+
+            <div class="bar">
+                <div class="info"><span>CSS</span></div> <!-- Denne viser at det er CSS -->
+                <div class="progress-line css"><span></span> </div>
+            </div>
+            <div class="bar">
+                <div class="info"> <span>Java Script</span></div> <!-- Denne viser at det er javascript -->
+                <div class="progress-line JavaScript"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info"><span>React</span></div> <!-- Denne viser at det er React -->
+                <div class="progress-line react"> <span></span></div>
+            </div>
+        </div>
+        
+    </section> <!-- Dette er footeren her he æg brukt style for å bruke css på footeren. -->
+    <footer style="color: white; text-align: center; background-color: rgb(21, 21, 21);">Joakim Johnsen <br> tlf: <a style="color: gray ;" href="tel:47603382">47603382</a> <br> mail:<br> <a style="color: gray;" href="mailto:joajohnsen@elev.rogfk.no"> joajohnsen@elev.rogfk.no</a></footer>
+</body>
+</html>

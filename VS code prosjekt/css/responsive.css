@@ -1,0 +1,113 @@
+/* Alt er inni container */
+.container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Definerer hvordan nettsiden ditribuerer plass mellom og rundt ting langs hoved aksen */
+    flex-wrap: wrap;
+    
+}
+
+/* Ndover her begynner kortene */
+.container .card{
+    position: relative;
+}
+
+/* Her begynner face 1 som da er det første kortet du ser, det som er oppå knappen */
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1; /* z-index lar deg sette elementer over hverandre. */
+    transform: translateY(100px); /* Transform lar meg flytte et element vertikalt */
+}
+
+/* Dette er selve animasjonen eller det som gjør at den går opp. */
+.container .card:hover .face.face1{
+    transform: translateY(0); /* Transform lar meg flytte langs Y aksen med translateY */
+    box-shadow: /* Lager kul skygge effekt når kortet går oppover. */
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+
+.container .card .face.face1 .content{
+    opacity: 1; /* Opacity lar meg gjemme det som er bak elementet/kortet. */
+}
+
+.container .card .face.face1 .content i{
+    font-size: 3em; /* em gjør at font størrelsen endrer seg etter størrelse på skjermen */
+    color: white; 
+    display: inline-block;
+}
+
+/* Endrer på overskriften eller <h3> */
+.container .card .face.face1 .content h3{
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+
+/* Farten på animasjonen eller transition */
+.container .card .face.face1 .content a{
+    transition: 0.5s;
+}
+
+/* Kortet bak */
+.container .card .face.face2{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 8);
+    transform: translateY(-100px);
+}
+
+/* Når du har musen over med hover */
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Knapp som lar deg gå tilbake inne i kalkulator appen */
+.goBackButton{
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 4px double #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Knappen som er bak det første kortet */
+.knappen{
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    background-color: yellowgreen;
+}

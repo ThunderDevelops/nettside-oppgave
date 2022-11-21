@@ -1,0 +1,16 @@
+/* Hadde planlagt å lage mer enn en boks så du kunne scrolle ned btw, men gjor ikkje dæ men alt skulle være inni denne */
+.loggEn{
+    text-align: center; /* Sentrere teksten */
+    font-size: 32px; /* Endrer størrelse på teksten */
+    margin: 300px; /* Lager sånn margin vett ikkje koss man seie det på norsk*/
+}
+
+/* Boksen i Devloggen som er ekstrem kul yes */
+.box{
+    text-align: left; /* Setter teksten på venstre side */
+    font-size: 18px; /* Endrer tekst størrelse */
+    background-color: blanchedalmond; /* Endrer farge på boksen */
+    padding: 20px; /* Gjer boksen min litt padding padding æ sånn greie rundt. */
+    border-radius: 15px; /* Lage sånn rund og fin kant */
+    box-shadow: 0 5px 10px black; /* box-shadow lager skygge. */
+}
